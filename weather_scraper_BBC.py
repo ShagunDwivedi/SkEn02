@@ -46,7 +46,7 @@ summ_daily_list = re.findall('[a-zA-Z][^A-Z]*', summ_daily.text)
 datelist = pd.date_range(datetime.today(), periods=len(high_temp_daily)).tolist()
 
 datelist = [datelist[i].date().strftime('%y-%m-%d') for i in range(len(datelist))]
-zipping = zip(datelist, high_temp_daily, low_temp_daily, summ_daily)
+zipping = zip(datelist, high_temp_daily_list, low_temp_daily_list, summ_daily_list)
 
 
 df = pd.DataFrame(list(zipping), columns=['Date', 'Highest', 'Lowest', 'Summary'])
