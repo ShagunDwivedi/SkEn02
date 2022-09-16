@@ -7,3 +7,4 @@ My adaptations of practice codes from SE2002.
 
 # Own Code Files
 - [weather_scraper_IMD](/weather_scraper_IMD.py)
+- [GoodReads_top100](/GoodReads_Top100.ipynb)
