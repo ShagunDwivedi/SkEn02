@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.write("""
-# Subtraction of 2 Numbers App
+# Subtraction App
 This app gives the difference between two numbers.
 """)
 #Get Input
@@ -17,5 +17,6 @@ def user_input_features():
 
 num1, num2 = user_input_features()
 
-st.subheader("Difference:")
-st.write(num1-num2)
+if(num1 != 0 or num2 !=0):
+    st.header("Difference:")
+    st.write(num1-num2)
